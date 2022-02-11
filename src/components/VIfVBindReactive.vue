@@ -5,21 +5,25 @@
             <h3>{{trainingExercise1.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise1.image}`)">
             <p>Targets musclegroup: {{ trainingExercise1.targets }}</p>
+            <p v-bind:class="trainingExercise1.split == 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for upperbody workouts</p>
         </article>
         <article>
             <h3>{{trainingExercise2.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise2.image}`)">
             <p>Targets musclegroup: {{ trainingExercise2.targets }}</p>
+            <p v-bind:class="trainingExercise1.split == 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for upperbody workouts</p>
         </article>
         <article>
             <h3>{{trainingExercise3.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise3.image}`)">
             <p>Targets musclegroup: {{ trainingExercise3.targets }}</p>
+            <p v-bind:class="trainingExercise1.split == 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for upperbody workouts</p>
         </article>
         <article>
             <h3>{{trainingExercise4.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise4.image}`)">
             <p>Targets musclegroup: {{ trainingExercise4.targets }}</p>
+            <p v-bind:class="trainingExercise1.split = 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for lowerbody workouts</p>
         </article>
     </section>
 </template>
@@ -31,25 +35,29 @@ export default {
         const trainingExercise1 = reactive({
             image: "benchpress.jpg",
             name: "Benchpress",
-            targets: "Chest"
+            targets: "Chest",
+            split: 'Upperbody'
         });
 
         const trainingExercise2 = reactive({
             image: "pullup.jpg",
             name: "Pull-up",
-            targets: "Back"
+            targets: "Back",
+            split: 'Upperbody'
         });
 
         const trainingExercise3 = reactive({
             image: "shoulderpress.jpg",
             name: "Shoulderpress",
-            targets: "Shoulders"
+            targets: "Shoulders",
+            split: 'Upperbody'
         });
 
         const trainingExercise4 = reactive({
             image: "legpress.jpg",
             name: "Leg-press",
-            targets: "Legs"
+            targets: "Legs",
+            split: 'Lowerbody'
         });
 
         return { trainingExercise1, trainingExercise2,
@@ -58,3 +66,11 @@ export default {
     }
 }
 </script>
+<style scoped>
+    .upperbody{
+        color: red;
+    }
+    .lowerbody{
+        color: green;
+    }
+</style>

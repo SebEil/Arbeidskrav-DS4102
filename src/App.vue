@@ -1,7 +1,6 @@
 <template>
   <h1>Her kan du se treningsøvelser</h1>
   <v-if-v-bind-reactive></v-if-v-bind-reactive>
-  
 </template>
 
 <script>
