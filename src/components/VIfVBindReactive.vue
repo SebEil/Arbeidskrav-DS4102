@@ -5,25 +5,25 @@
             <h3>{{trainingExercise1.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise1.image}`)">
             <p>Targets musclegroup: {{ trainingExercise1.targets }}</p>
-            <p v-bind:class="trainingExercise1.split == 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for upperbody workouts</p>
+            <p v-bind:class="trainingExercise1.split = 'Upperbody' ? 'upperbody':'lowerbody'">Perfect for upperbody workouts</p>
         </article>
         <article>
             <h3>{{trainingExercise2.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise2.image}`)">
             <p>Targets musclegroup: {{ trainingExercise2.targets }}</p>
-            <p v-bind:class="trainingExercise1.split == 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for upperbody workouts</p>
+            <p v-bind:class="trainingExercise2.split = 'Upperbody' ? 'upperbody':'lowerbody'">Perfect for upperbody workouts</p>
         </article>
         <article>
             <h3>{{trainingExercise3.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise3.image}`)">
             <p>Targets musclegroup: {{ trainingExercise3.targets }}</p>
-            <p v-bind:class="trainingExercise1.split == 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for upperbody workouts</p>
+            <p v-bind:class="trainingExercise3.split = 'Upperbody' ? 'upperbody':'lowerbody'">Perfect for upperbody workouts</p>
         </article>
         <article>
             <h3>{{trainingExercise4.name}}</h3>
             <img :src="require(`@/assets/images/${trainingExercise4.image}`)">
             <p>Targets musclegroup: {{ trainingExercise4.targets }}</p>
-            <p v-bind:class="trainingExercise1.split = 'Upperbody' ? 'lowerbody':'upperbody'">Perfect for lowerbody workouts</p>
+            <p v-bind:class="trainingExercise4.split == 'Upperbody' ? 'upperbody':'lowerbody'">Perfect for lowerbody workouts</p>
         </article>
     </section>
 </template>
