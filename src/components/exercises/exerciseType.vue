@@ -1,13 +1,16 @@
 <template>
     <article>
         <h3>{{ øvelse }}</h3>
-        <h3>Targetmusclegroup: {{ targets }}</h3>
-        <h2>{{ split }}</h2>
+        <h4>Targetmusclegroup: {{ targets }}</h4>
+        <h4>Perfect workouts for {{ split }} </h4>
         <img :src="getImage()">
     </article>
 </template>
 
+
+
 <script>
+
 export default {
     props: {
         øvelse: String,
@@ -30,3 +33,12 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .upperbody{
+        color: red;
+    }
+    .lowerbody{
+        color: green;
+    }
+</style>

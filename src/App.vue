@@ -2,6 +2,7 @@
   <exercise-header></exercise-header>
   <v-if-v-bind-reactive></v-if-v-bind-reactive>
   <br>
+  <exercise-header></exercise-header>
   <exercise-list></exercise-list>
 
 </template>
