@@ -1,7 +1,7 @@
 <template>
     <section>
         <article>
-            <h3>{{trainingExercise1.name}}</h3>
+            <h2>{{trainingExercise1.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise1.image}`)">
             <p>Targets musclegroup: {{ trainingExercise1.targets }}</p>
             <p v-bind:class="trainingExercise1.isExpensive = true ? 'cheap-membership':'expensive-membership'">
@@ -10,7 +10,7 @@
             <p v-else>The gym provides everything needed for this exercise</p>        
         </article>
         <article>
-            <h3>{{trainingExercise2.name}}</h3>
+            <h2>{{trainingExercise2.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise2.image}`)">
             <p>Targets musclegroup: {{ trainingExercise2.targets }}</p>
             <p v-bind:class="trainingExercise2.isExpensive = true ? 'cheap-membership':'expensive-membership'">
@@ -19,7 +19,7 @@
             <p v-else>The gym provides everything needed for this exercise</p>        
         </article>
         <article>
-            <h3>{{trainingExercise3.name}}</h3>
+            <h2>{{trainingExercise3.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise3.image}`)">
             <p>Targets musclegroup: {{ trainingExercise3.targets }}</p>
             <p v-bind:class="trainingExercise3.isExpensive = false ? 'cheap-membership':'expensive-membership'">
@@ -28,7 +28,7 @@
             <p v-else>The gym provides everything needed for this exercise</p>
         </article>
         <article>
-            <h3>{{trainingExercise4.name}}</h3>
+            <h2>{{trainingExercise4.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise4.image}`)">
             <p>Targets musclegroup: {{ trainingExercise4.targets }}</p>
             <p v-bind:class="trainingExercise4.isExpensive = true ? 'cheap-membership':'expensive-membership'">
@@ -99,6 +99,10 @@ export default {
 
     .own-equipment{
         color: rgb(255, 187, 0);
+    }
+
+    article{
+        padding: 2rem;
     }
 </style>
 
