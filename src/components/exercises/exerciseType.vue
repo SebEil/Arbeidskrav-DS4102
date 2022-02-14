@@ -1,13 +1,11 @@
 <template>
-    <article>
-        <h3>{{ øvelse }}</h3>
-        <h4>Targetmusclegroup: {{ targets }}</h4>
-        <h4>Perfect workouts for {{ split }} </h4>
-        <img :src="getImage()">
-    </article>
+         
+    <h3>{{ øvelse }}</h3>
+    <h4>Targetmusclegroup: {{ targets }}</h4>
+    <h4>Perfect workouts for {{ split }} </h4>
+    <img :src="getImage()"> 
+               
 </template>
-
-
 
 <script>
 
@@ -34,11 +32,3 @@ export default {
 }
 </script>
 
-<style scoped>
-    .upperbody{
-        color: red;
-    }
-    .lowerbody{
-        color: green;
-    }
-</style>

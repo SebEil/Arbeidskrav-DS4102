@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <article>
+    <section class="row">
+        <article class="col p-2 text-center">
             <h2>{{trainingExercise1.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise1.image}`)">
             <p>Targets musclegroup: {{ trainingExercise1.targets }}</p>
@@ -9,7 +9,7 @@
             <p v-if="trainingExercise1.requiresOwnEquipment == true">This exercise requires own equipment</p>
             <p v-else>The gym provides everything needed for this exercise</p>        
         </article>
-        <article>
+        <article class="col p-2 text-center">
             <h2>{{trainingExercise2.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise2.image}`)">
             <p>Targets musclegroup: {{ trainingExercise2.targets }}</p>
@@ -18,7 +18,7 @@
             <p v-if="trainingExercise2.requiresOwnEquipment == true">This exercise requires own equipment</p>
             <p v-else>The gym provides everything needed for this exercise</p>        
         </article>
-        <article>
+        <article class="col p-2 text-center">
             <h2>{{trainingExercise3.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise3.image}`)">
             <p>Targets musclegroup: {{ trainingExercise3.targets }}</p>
@@ -27,7 +27,7 @@
             <p v-if="trainingExercise3.requiresOwnEquipment == true" v-bind:class="trainingExercise3.membershipPrice < 250 ? 'own-equipment':'own-equipment'">This exercise requires own equipment</p>
             <p v-else>The gym provides everything needed for this exercise</p>
         </article>
-        <article>
+        <article class="col p-2 text-center">
             <h2>{{trainingExercise4.name}}</h2>
             <img :src="require(`@/assets/images/${trainingExercise4.image}`)">
             <p>Targets musclegroup: {{ trainingExercise4.targets }}</p>
@@ -103,6 +103,15 @@ export default {
 
     article{
         padding: 2rem;
+    }
+
+    img{
+        width: 450px;
+        height: 400px;
+    }
+
+    article{
+        border: 2px solid black;
     }
 </style>
 

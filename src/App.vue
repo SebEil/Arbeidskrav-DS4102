@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import VIfVBindReactive from "./components/VIfVBindReactive.vue"
 import exerciseList from "./components/exercises/exerciseList.vue"
 import exerciseHeader from "./components/exerciseHeader.vue"
