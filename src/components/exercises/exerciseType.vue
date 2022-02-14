@@ -1,10 +1,10 @@
 <template>
-         
-    <h3>{{ øvelse }}</h3>
-    <h4>Targetmusclegroup: {{ targets }}</h4>
-    <h4>Perfect workouts for {{ split }} </h4>
-    <img :src="getImage()"> 
-               
+    <section>   
+        <h3>{{ øvelse }}</h3>
+        <h4>Targetmusclegroup: {{ targets }}</h4>
+        <h4>Perfect workouts for {{ split }} </h4>
+        <img :src="getImage()"> 
+    </section>             
 </template>
 
 <script>
@@ -32,3 +32,8 @@ export default {
 }
 </script>
 
+<style>
+
+    section{ border: 1px solid black;}
+
+</style>

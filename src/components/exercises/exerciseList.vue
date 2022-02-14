@@ -1,8 +1,13 @@
 <template>
     <section>
-        <h2>Exercises med grid</h2>
-            <article lass="row mt-3">
-                <exercise-type class="col" v-for="(exercise, i) in exercises" :key="i" :øvelse="exercise.øvelse" :targets="exercise.targets" :split="exercise.split" :image="exercise.image"></exercise-type>
+            <article class="row">
+                <exercise-type 
+                    class="col p-2 text-center" v-for="(exercise, i) in exercises" :key="i" 
+                    :øvelse="exercise.øvelse" 
+                    :targets="exercise.targets" 
+                    :split="exercise.split" 
+                    :image="exercise.image">
+                </exercise-type>
             </article>       
     </section>
 </template>
@@ -22,4 +27,11 @@ export default {
     }
 }
 </script>
+
+<style>
+    img{
+        width: 450px;
+        height: 400px;
+    }
+</style>
 

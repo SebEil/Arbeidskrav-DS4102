@@ -13,7 +13,14 @@ const exerciseService = ( function(){
         return exercises;
     }
 
-    return { getAll }
+    const addExercise = ( newExercise ) => {
+        exercises.value.push( newExercise );
+    }
+
+    return { 
+        getAll,
+        addExercise
+     }
 
 } () );
 
