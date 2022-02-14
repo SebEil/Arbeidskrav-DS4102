@@ -1,8 +1,8 @@
 <template>
     <section>   
         <h3>{{ øvelse }}</h3>
-        <h4>Targetmusclegroup: {{ targets }}</h4>
-        <h4>Perfect workouts for {{ split }} </h4>
+        <h4>Muskelgruppe som brukes: {{ targets }}</h4>
+        <h4>For økter hvor du skal trene: {{ split }} </h4>
         <img :src="getImage()"> 
     </section>             
 </template>
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
     section{ border: 1px solid black;}
 

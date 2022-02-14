@@ -5,7 +5,7 @@
 <style>
     .header {
         padding: 1rem;
-        color: black;
+        
 
     }
 
