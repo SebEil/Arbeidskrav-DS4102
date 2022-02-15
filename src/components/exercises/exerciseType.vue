@@ -3,17 +3,21 @@
         <h3>{{ øvelse }}</h3>
         <h4>Muskelgruppe som brukes: {{ targets }}</h4>
         <h4>For økter hvor du skal trene: {{ split }} </h4>
+        <h4>Trenger man utstyr: {{ vekter }}</h4>
         <img :src="getImage()"> 
     </section>             
 </template>
 
 <script>
 
+
+
 export default {
     props: {
         øvelse: String,
         targets: String,
         split: String,
+        vekter: String,
         image: String
     },
     setup(props){
@@ -35,5 +39,13 @@ export default {
 <style scoped>
 
     section{ border: 1px solid black;}
+
+    .trenger{
+        color: green;
+    }
+
+    .trenger-ikke{
+        color: red;
+    }
 
 </style>

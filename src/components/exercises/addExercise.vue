@@ -1,4 +1,5 @@
 <template>
+<br>
     <section class="mb-5 midtstill">
         <h3>Legg til ny øvelse</h3>
         <div class="mb-3">
@@ -18,6 +19,15 @@
                 <option>Arms</option>
             </select>
         </div>
+        <div class="mb-3">
+            <label class="form-label">Trenger man utstyr?</label>
+            <select v-model="vekter">
+                <option disabled value="">Maskiner osv..</option>
+                <option>Ja</option>
+                <option>Nei</option>
+            </select>
+        </div>
+
         <input class="btn btn-secondary w-100" @click="addExercise" type="button" value="Legg til øvelse">
     </section>
 </template>
@@ -31,13 +41,15 @@ export default {
         const øvelse = ref();
         const targets = ref();
         const split = ref();
+        const vekter = ref();
 
         const addExercise = () => {
 
             const newExercise = {
                 øvelse: øvelse.value,
                 targets: targets.value,
-                split: split.value
+                split: split.value,
+                vekter: vekter.value
             };
             exerciseServise.addExercise( newExercise );
         }
@@ -46,6 +58,7 @@ export default {
             øvelse,
             targets,
             split,
+            vekter,
             addExercise
         }
     }   
