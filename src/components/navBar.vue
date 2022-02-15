@@ -1,41 +1,30 @@
 <template>
-<section class="background-color">
+    <section class="background-color">
         <section class="row d-flex justify-content-end">
             <div class="col">
                 <img class="navImg " src="@/assets/logo.png" alt="no-image">
-            </div>           
-            <article class="col text-center">
-                <div>
-                    Info
-                </div>
-            </article>
-            <article class="col text-center">
-                <div>
-                    Hjem
-                </div>
-            </article>
-            <article class="col text-center">
-                <div>
-                    Kontakt oss
-                </div>
-            </article>            
+            </div>
+            <router-link to="/">Home</router-link>
+            <router-link to="/about">About</router-link>                    
         </section>
-</section>        
+    </section>
+    <router-view/>        
 </template>
 
 <style scoped>
-    article {
+    a {
             padding: 1rem;
             max-width: 8rem;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;       
         }
     
-    article:hover {
-        background-color: rgb(122, 117, 110);
+    a:hover {
+        background-color: rgb(255, 171, 16);
     }
 
     .background-color {
-        background: conic-gradient(from -90deg at top left, black, white);    
+        background: linear-gradient(to bottom right, rgb(219, 0, 0), rgb(226, 173, 73))    
     }
 
     .navImg {
