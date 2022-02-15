@@ -3,9 +3,7 @@
         <h3>{{ øvelse }}</h3>
         <h4>Muskelgruppe som brukes: {{ targets }}</h4>
         <h4>For økter hvor du skal trene: {{ split }} </h4>
-        <div v-bind:class="[vekter === 'Ja' ? 'trenger' : 'trenger-ikke']">
-        <h4>Trenger man utstyr: {{ vekter }}</h4>
-        </div>
+        <h4 v-bind:class="[vekter === 'Ja' ? 'trenger' : 'trenger-ikke']">Trenger man utstyr: {{ vekter }}</h4>
         <img :src="getImage()"> 
     </section>             
 </template>
