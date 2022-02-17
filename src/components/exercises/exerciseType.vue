@@ -2,7 +2,8 @@
     <section class="exerciseContainer">   
         <h3>{{ øvelse }}</h3>
         <h4>Muskelgruppe som brukes: {{ targets }}</h4>
-        <h4>For økter hvor du skal trene: {{ split }} </h4>
+        <h4 v-if="split === 'Abs'"> Viktig å huske iblant {{ split }}</h4>
+        <h4 v-else>Passer om du skal trene {{ split }} </h4>
         <h4 v-bind:class="[vekter === 'Ja' ? 'trenger' : 'trenger-ikke']">Trenger man utstyr: {{ vekter }}</h4>
         <img :src="getImage()"> 
     </section>             

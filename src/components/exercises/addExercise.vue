@@ -18,6 +18,7 @@
                 <option>Upper</option>
                 <option>Lower</option>
                 <option>Arms</option>
+                <option>Abs</option>
             </select>
         </div>
         <div class="mb-3">
