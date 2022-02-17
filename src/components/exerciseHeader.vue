@@ -1,5 +1,5 @@
 <template>
-        <h1 class="header text-center">Her kan du se treningsøvelser</h1>
+        <h1 class="header text-center">Here you have the exercises</h1>
 </template>
 
 <style>

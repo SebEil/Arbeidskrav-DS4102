@@ -2,19 +2,19 @@
 <br>
 <section class="container">
     <section class="mb-5 midtstill">
-        <h3>Legg til ny øvelse</h3>
+        <h3>Add new Exercise</h3>
         <div class="mb-3">
-            <label class="form-label">Navn på øvelsen</label>
+            <label class="form-label">Name of exercise</label>
             <input class="form-control" v-model="øvelse" type="text">
         </div>
         <div class="mb-3">
-            <label class="form-label">Muskelgruppe</label>
+            <label class="form-label">Muslce group</label>
             <input class="form-control" v-model="targets" type="text">
         </div>
         <div class="mb-3">
-            <label class="form-label">Perfekt for</label>
+            <label class="form-label">Perfect for</label>
             <select v-model="split">
-                <option disabled value="">Øvelsen er rettet</option>
+                <option disabled value="">Exercise for</option>
                 <option>Upper</option>
                 <option>Lower</option>
                 <option>Arms</option>
@@ -22,15 +22,15 @@
             </select>
         </div>
         <div class="mb-3">
-            <label class="form-label">Trenger man utstyr?</label>
+            <label class="form-label">Is equipment needed?</label>
             <select v-model="vekter">
-                <option disabled value="">Maskiner osv..</option>
-                <option>Ja</option>
-                <option>Nei</option>
+                <option disabled value="">Machines etc..</option>
+                <option>Yes</option>
+                <option>No</option>
             </select>
         </div>
 
-        <input class="btn btn-secondary w-100" @click="addExercise" type="button" value="Legg til øvelse">
+        <input class="btn btn-secondary w-100" @click="addExercise" type="button" value="Add exercise">
     </section>
 </section>
 </template>
