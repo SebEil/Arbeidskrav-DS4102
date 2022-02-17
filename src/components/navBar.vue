@@ -5,7 +5,8 @@
                 <img class="navImg " src="@/assets/logo.png" alt="no-image">
             </div>
             <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>                    
+            <router-link to="/example">Example</router-link>  
+            <router-link to="/about">About</router-link>                  
         </section>
     </section>
     <router-view/>        

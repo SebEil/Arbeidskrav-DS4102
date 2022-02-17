@@ -1,16 +1,5 @@
 <template>
     <section>
-
-            <article class="m-3 text-center ">
-                <div>
-                    <h4><label class="form-label">Søk på øvelser</label></h4>   
-                </div>
-                <div class="search-container">
-                    <input class="form-control text-center mb-2" v-model="exer" type="text" placeholder="Squat...">
-                    <span class="btn btn-secondary w-100" @click="searchExercise" type="button" value="Søk">Søk</span> 
-                </div>   
-            </article>
-
             <article class="row align d-flex justify-content-center">
                 <exercise-type 
                     class="col p-2 text-center" v-for="(exercise, i) in exercises" :key="i" 

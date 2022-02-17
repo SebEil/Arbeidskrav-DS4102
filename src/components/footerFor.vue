@@ -10,6 +10,6 @@
         background: linear-gradient(to top left, rgb(219, 0, 0), rgb(226, 173, 73));
         text-align: center;
         height: 100px;
-        padding-top: 1rem;
+        bottom: 100%;
     }
 </style>
