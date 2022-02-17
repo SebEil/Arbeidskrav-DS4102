@@ -25,7 +25,7 @@
 section{
     height: 200px;
     padding: 3rem;
-        min-height: 40rem;
+    min-height: 50rem;
 }
 
 h3{

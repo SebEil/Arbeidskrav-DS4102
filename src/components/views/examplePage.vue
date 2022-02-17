@@ -51,7 +51,7 @@ export default{
 
 <style scoped>
 section{
-    min-height: 40rem;
+    min-height: 50rem;
 }
 
 article{
