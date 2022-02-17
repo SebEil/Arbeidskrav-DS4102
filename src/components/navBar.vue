@@ -2,7 +2,7 @@
     <section class="background-color">
         <section class="row d-flex justify-content-end">
             <div class="col">
-                <img class="navImg " src="@/assets/logo.png" alt="no-image">
+                <i class="bi bi-balloon-heart-fill">FitZone</i>
             </div>
             <router-link to="/">Home</router-link>
             <router-link to="/example">Example</router-link>  
@@ -34,4 +34,8 @@
         padding-left: 0.5rem;
     }
 
+    i{
+        font-size: 2.4rem;
+        padding-left: 1rem;
+    }
 </style>
