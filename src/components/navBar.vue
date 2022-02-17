@@ -14,10 +14,10 @@
 
 <style scoped>
     a {
-            padding: 1rem;
-            max-width: 8rem;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: black;       
+        padding: 1rem;
+        max-width: 8rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;       
         }
     
     a:hover {
