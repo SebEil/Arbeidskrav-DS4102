@@ -1,5 +1,6 @@
 <template>
 <br>
+<section class="container">
     <section class="mb-5 midtstill">
         <h3>Legg til ny øvelse</h3>
         <div class="mb-3">
@@ -30,6 +31,7 @@
 
         <input class="btn btn-secondary w-100" @click="addExercise" type="button" value="Legg til øvelse">
     </section>
+</section>
 </template>
 
 <script>
@@ -68,5 +70,12 @@ export default {
 <style>
  .midtstill{ 
      text-align: center;
+ }
+
+ .container{
+     padding: 1rem;
+     background-color: rgb(161, 148, 148);
+     border-radius: 25px;
+     margin-bottom: 1rem;
  }
 </style>

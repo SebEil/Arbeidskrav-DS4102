@@ -23,6 +23,7 @@ export default {
 <style >
   main{
     background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    min-width: 390px;
   }
 </style>
 

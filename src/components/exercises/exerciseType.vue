@@ -1,5 +1,5 @@
 <template>
-    <section>   
+    <section class="exerciseContainer">   
         <h3>{{ øvelse }}</h3>
         <h4>Muskelgruppe som brukes: {{ targets }}</h4>
         <h4>For økter hvor du skal trene: {{ split }} </h4>
@@ -46,6 +46,14 @@ export default {
 
     .trenger-ikke{
         color: red;
+    }
+
+    .exerciseContainer {
+        border-radius: 25px;
+        margin: 0.5rem;
+        
+        max-width: 460px;
+        padding: 3rem;
     }
 
 </style>
