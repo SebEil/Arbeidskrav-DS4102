@@ -5,15 +5,15 @@
         <h4 v-if="split === 'Abs'"> Viktig å huske iblant {{ split }}</h4>
         <h4 v-else>Passer om du skal trene {{ split }} </h4>
         <h4 v-bind:class="[vekter === 'Ja' ? 'trenger' : 'trenger-ikke']">Trenger man utstyr: {{ vekter }}</h4>
-        <img :src="getImage()"> 
+        <img :src="getImage()">
     </section>             
 </template>
 
 <script>
 
 
-
 export default {
+
     props: {
         øvelse: String,
         targets: String,
