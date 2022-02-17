@@ -1,10 +1,10 @@
 <template>
     <section class="exerciseContainer">   
         <h3>{{ øvelse }}</h3>
-        <h4>Muskelgruppe som brukes: {{ targets }}</h4>
-        <h4 v-if="split === 'Abs'"> Viktig å huske iblant {{ split }}</h4>
-        <h4 v-else>Passer om du skal trene {{ split }} </h4>
-        <h4 v-bind:class="[vekter === 'Ja' ? 'trenger' : 'trenger-ikke']">Trenger man utstyr: {{ vekter }}</h4>
+        <h4>Muscle group used: {{ targets }}</h4>
+        <h4 v-if="split === 'Abs'"> Don't forget to train {{ split }}</h4>
+        <h4 v-else>Good when exercising: {{ split }} </h4>
+        <h4 v-bind:class="[vekter === 'Yes' ? 'trenger' : 'trenger-ikke']">Equipment needed: {{ vekter }}</h4>
         <img :src="getImage()">
     </section>             
 </template>
