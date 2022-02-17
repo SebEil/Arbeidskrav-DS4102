@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import exerciseList from "../exercises/exerciseList.vue"
-import addExercise from "../exercises/addExercise.vue"
-import exerciseHeader from "../exerciseHeader.vue"
+import ExerciseList from "../exercises/ExerciseList.vue"
+import AddExercise from "../exercises/AddExercise.vue"
+import ExerciseHeader from "../ExerciseHeader.vue"
 
 export default {
   name: 'Home',
   components: {
-    exerciseList,
-    addExercise,
-    exerciseHeader
+    ExerciseList,
+    AddExercise,
+    ExerciseHeader
   }
 }
 </script>

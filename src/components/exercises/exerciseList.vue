@@ -16,7 +16,7 @@
 <script>
 
 import exerciseServise from "../../services/exerciseServise"
-import exerciseType from "./exerciseType.vue"
+import ExerciseType from "./ExerciseType.vue"
 
 
 
@@ -27,7 +27,7 @@ export default {
         return { exercises }
     },
     components: {
-        exerciseType
+        ExerciseType
     }
 }
 </script>

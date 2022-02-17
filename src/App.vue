@@ -8,14 +8,14 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import navBar from "./components/navBar.vue"
-import footerFor from "./components/footerFor.vue"
+import NavBar from "./components/NavBar.vue"
+import FooterFor from "./components/FooterFor.vue"
 
 export default {
   name: 'App',
   components: {
-    navBar,
-    footerFor
+    NavBar,
+    FooterFor
   }
 }
 </script>
